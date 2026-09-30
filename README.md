@@ -1,12 +1,17 @@
 # 1.MAC下的状态栏万年历
 ## 功能说明、界面、使用方法见：
 
-### [calendar.zfdang.com](http://calendar.zfdang.com)
+### [calendar.zfdang.com](https://calendar.zfdang.com)
 
 # 2.Code Explanation
 This is a menubar app which shows a simple chinese lunar calendar for OSX.
 
-There are two different implementations for this app:
+There are three different implementations for this app:
+
+### 2.0. WanNianLiSwift (recommended, macOS 13+)
+A native rewrite in Swift (AppKit + SwiftUI) with the same features, no WebView.
+Lunar dates come from Foundation's Chinese calendar (verified day by day against the Hong Kong Observatory tables).
+Build with `WanNianLiSwift/scripts/build-app.sh` (Command Line Tools only). See [WanNianLiSwift/README.md](WanNianLiSwift/README.md).
 
 ### 2.1. WanNianLi
 this project is using the official NSStatusItem to implement the menubar app.
@@ -32,3 +37,8 @@ https://github.com/aschuch/AXStatusItemPopup
 
 http://sourceforge.net/projects/menucracker/
 
+
+# 4.License
+[MIT](LICENSE)。旧版目录中的第三方组件使用各自的许可证（AFNetworking: MIT，MenuCracker: Artistic License）。
+
+更新历史见 [CHANGELOG.md](CHANGELOG.md)，发布流程见 [RELEASE.md](RELEASE.md)。

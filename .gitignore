@@ -6,5 +6,9 @@
 #
 # Pods/
 build/
-.DS_STORE
+.DS_Store
 CLCMenuExtra.menu/
+
+# 本地工具状态文件
+.omc/
+.workbuddy/
